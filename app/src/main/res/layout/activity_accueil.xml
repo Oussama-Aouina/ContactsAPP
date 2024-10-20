@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="@color/backgroundColor"
+    tools:context=".MainActivity">
+
+    <!-- Title Section -->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="148dp"
+        android:layout_marginBottom="16dp"
+        android:paddingTop="80dp"
+        android:text="Welcome"
+        android:textAlignment="center"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <!-- Welcome Paragraph -->
+    <TextView
+        android:id="@+id/welcomeMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:lineSpacingExtra="4dp"
+        android:padding="8dp"
+        android:text="We're excited to have you here!"
+        android:textAlignment="center"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="18sp" />
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <!-- Filled button style -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/all_contacts_button"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/primaryColor"
+            android:text="View Contacts"
+            android:textColor="@color/white" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/add_contact_button"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:text="Add Contact"
+            android:textColor="@color/primaryColor" />
+    </LinearLayout>
+
+</LinearLayout>
